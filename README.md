@@ -1,6 +1,8 @@
-<center>
-  <h1>Kitty Cat Club</h1>
-  <br/>
-  <h2>What is Kitty Cat Club?</h2>
-  <p>Kitty Cat Club is an upcoming proxy that allows you to search through the internet without censorship.</p>
-</center>
+services:
+  - type: web
+    name: proxy-creator-yuki-tango-lvl-3
+    env: python
+    region: Oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn --port $PORT --host 0.0.0.0 main:app"
