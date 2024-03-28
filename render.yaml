@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: proxy-creator-yuki-tango-lvl-3
+    name: proxy-creator-kitty-cat-unblocker-1
     env: python
     region: Oregon
     plan: free
